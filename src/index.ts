@@ -27,7 +27,7 @@ export default class Client {
     async purchase(options: { amount: number, invoice: string, invoiceDate?: string, description?: string, mobileNumber?: string, serviceType?: string, payerMail?: string, payerName?: string, paymentCode?: string, nationalCode?: string, pans?: string }) {
 
         if (!options.invoiceDate)
-            options.invoiceDate = Date.now().toString()
+            options.invoiceDate = new Date().toISOString()
 
         const { base, callback: callbackApi, terminal: terminalNumber } = this.options
         const { amount, invoice } = options
