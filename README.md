@@ -28,6 +28,8 @@ CALLBACK_URL?invoiceId=10001&status=success&referenceNumber=142536124562&trackId
 با inquiry هم میتونید درهر مرحله وضعیت چک کنید
 
 ``` js
+import Client from "@kav3/pep"
+
 // username, password, terminal از شرکت بگیرید
 // callback: ادرس برگشت به سایت خودتون
 // base: آدرس درگاه ممکنه بعدا توسط بانک عوض بشه
